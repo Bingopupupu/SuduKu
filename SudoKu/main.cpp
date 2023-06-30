@@ -215,7 +215,7 @@ inline int to_integer(char* arg)
     return ret;
 }
 
-// 根据给定的难度生成数独
+// 根据给定的难度生成数独，对难度进行划分
 // 1、基本思路：
 // 根据不同挖空数量，确定难度系数，难度系数有： 1 2 3 ，共3档
 void create_sudoku_with_difficulty(int sudoku_num, int difficulty)
