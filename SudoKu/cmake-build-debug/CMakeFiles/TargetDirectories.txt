@@ -1,0 +1,3 @@
+C:/Users/Administrator.XTZJ-20220824YJ/Desktop/SudoKu/cmake-build-debug/CMakeFiles/SudoKu.dir
+C:/Users/Administrator.XTZJ-20220824YJ/Desktop/SudoKu/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Administrator.XTZJ-20220824YJ/Desktop/SudoKu/cmake-build-debug/CMakeFiles/rebuild_cache.dir
