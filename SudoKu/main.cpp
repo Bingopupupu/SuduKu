@@ -163,18 +163,10 @@ void sudoku_game_solve(int count)
         // 遍历整个数组，输出解
         for (auto & i : space)
         {
-//            if(space[i][0]==0)
-//                fputc('$', output_solve);
-//            else
-//                fputc(space[i][0] + '0', output_solve);
             fputc(i[0] + '0', output_solve);
             for (int j = 1; j < 9; j++)
             {
                 fputc(' ', output_solve);
-//                if(space[i][j]==0)
-//                    fputc('$', output_solve);
-//                else
-//                    fputc(space[i][j] + '0', output_solve);
                 fputc(i[j] + '0', output_solve);
             }
             fputc('\n', output_solve);
