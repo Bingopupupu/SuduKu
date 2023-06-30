@@ -163,10 +163,18 @@ void sudoku_game_solve(int count)
         // 遍历整个数组，输出解
         for (auto & i : space)
         {
+//            if(space[i][0]==0)
+//                fputc('$', output_solve);
+//            else
+//                fputc(space[i][0] + '0', output_solve);
             fputc(i[0] + '0', output_solve);
             for (int j = 1; j < 9; j++)
             {
                 fputc(' ', output_solve);
+//                if(space[i][j]==0)
+//                    fputc('$', output_solve);
+//                else
+//                    fputc(space[i][j] + '0', output_solve);
                 fputc(i[j] + '0', output_solve);
             }
             fputc('\n', output_solve);
@@ -286,8 +294,6 @@ void single_check(int count)
     }
 }
 
-
-// 额外实现的数独生成函数，用来辅助唯一解生成
 void sudoku_generate(int num_empty) {
     for(int i=1; i<=num_empty; i++)
     {
@@ -297,8 +303,6 @@ void sudoku_generate(int num_empty) {
     }
 }
 
-// 生成具有唯一解的数独
-// 实现思路是随机生成数独，然后进行求解，如果有多解则重复生成
 void create_sudoku_with_single_solution(int sudoku_num)
 {
     int num_empty = 20;
