@@ -2,7 +2,7 @@
 #include<cstdlib>
 #include<iostream>
 #include<algorithm>
-#include"getopt.h"    //注意使用方法
+#include"getopt.h"
 using namespace std;
 
 int space[9][9];
