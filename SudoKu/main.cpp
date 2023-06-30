@@ -302,6 +302,8 @@ void single_check(int count)
     }
 }
 
+
+// 额外实现的数独生成函数，用来辅助唯一解生成
 void sudoku_generate(int num_empty) {
     for(int i=1; i<=num_empty; i++)
     {
@@ -338,17 +340,17 @@ void create_sudoku_with_single_solution(int sudoku_num)
             single_check(0);
         }
         // 遍历整个数组，输出
-        for (auto & i : space)
-        {
-            fputc(i[0] + '0', output_solve);
-            for (int j = 1; j < 9; j++)
-            {
-                fputc(' ', output_solve);
-                fputc(i[j] + '0', output_solve);
-            }
-            fputc('\n', output_solve);
-        }
-        fputc('\n', output_solve);
+        // for (auto & i : space)
+        // {
+        //     fputc(i[0] + '0', output_solve);
+        //     for (int j = 1; j < 9; j++)
+        //     {
+        //         fputc(' ', output_solve);
+        //         fputc(i[j] + '0', output_solve);
+        //     }
+        //     fputc('\n', output_solve);
+        // }
+        // fputc('\n', output_solve);
         cnt++;
     }
 
