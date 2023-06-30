@@ -340,17 +340,17 @@ void create_sudoku_with_single_solution(int sudoku_num)
             single_check(0);
         }
         // 遍历整个数组，输出
-        // for (auto & i : space)
-        // {
-        //     fputc(i[0] + '0', output_solve);
-        //     for (int j = 1; j < 9; j++)
-        //     {
-        //         fputc(' ', output_solve);
-        //         fputc(i[j] + '0', output_solve);
-        //     }
-        //     fputc('\n', output_solve);
-        // }
-        // fputc('\n', output_solve);
+        for (auto & i : space)
+        {
+            fputc(i[0] + '0', output_solve);
+            for (int j = 1; j < 9; j++)
+            {
+                fputc(' ', output_solve);
+                fputc(i[j] + '0', output_solve);
+            }
+            fputc('\n', output_solve);
+        }
+        fputc('\n', output_solve);
         cnt++;
     }
 
